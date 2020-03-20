@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculator.MainPage">
+
+    <Grid ColumnSpacing="1" RowSpacing="1" BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="14*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="res" Text="0" HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="100" TextColor="White" BackgroundColor="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <Button Clicked="Clear"   Text="C"   BackgroundColor="Gray"    FontSize="20" Grid.Row="1" Grid.Column="0"/>
+        <Button Clicked="Delete"  Text="DEL" BackgroundColor="Gray" FontSize="20" Grid.Row="1" Grid.Column="1"/>
+        <Button Clicked="Percent" Text="%"   BackgroundColor="Gray" FontSize="20" Grid.Row="1" Grid.Column="2"/>
+        <Button Clicked="getOperator"  Text="/"   BackgroundColor="Orange" FontSize="20" TextColor="White" Grid.Row="1" Grid.Column="3"/>
+        <Button Clicked="getDigit"  Text="7"   BackgroundColor="Gray" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+        <Button Clicked="getDigit"  Text="8"   BackgroundColor="Gray" FontSize="20" Grid.Row="2" Grid.Column="1"/>
+        <Button Clicked="getDigit"  Text="9"   BackgroundColor="Gray" FontSize="20" Grid.Row="2" Grid.Column="2"/>
+        <Button Clicked="getOperator"   Text="x"   BackgroundColor="Orange" FontSize="20" TextColor="White" Grid.Row="2" Grid.Column="3"/>
+        <Button Clicked="getDigit"  Text="4"   BackgroundColor="Gray" FontSize="20" Grid.Row="3" Grid.Column="0"/>
+        <Button Clicked="getDigit"  Text="5"   BackgroundColor="Gray" FontSize="20" Grid.Row="3" Grid.Column="1"/>
+        <Button Clicked="getDigit"  Text="6"   BackgroundColor="Gray" FontSize="20" Grid.Row="3" Grid.Column="2"/>
+        <Button Clicked="getOperator"   Text="-"   BackgroundColor="Orange" FontSize="20" TextColor="White" Grid.Row="3" Grid.Column="3"/>
+        <Button Clicked="getDigit"  Text="1"   BackgroundColor="Gray" FontSize="20" Grid.Row="4" Grid.Column="0"/>
+        <Button Clicked="getDigit"  Text="2"   BackgroundColor="Gray" FontSize="20" Grid.Row="4" Grid.Column="1"/>
+        <Button Clicked="getDigit"  Text="3"   BackgroundColor="Gray" FontSize="20" Grid.Row="4" Grid.Column="2"/>
+        <Button Clicked="getOperator"    Text="+"   BackgroundColor="Orange" FontSize="20" TextColor="White" Grid.Row="4" Grid.Column="3"/>
+        <Button Clicked="getDigit"  Text="0"   BackgroundColor="Gray" FontSize="20" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Button Clicked="Point"   Text="."   BackgroundColor="Gray" FontSize="20" Grid.Row="5" Grid.Column="2"/>
+        <Button Clicked="Equals"  Text="="   BackgroundColor="Orange" FontSize="20" TextColor="White" Grid.Row="5" Grid.Column="3"/>
+    </Grid>
+
+</ContentPage>
